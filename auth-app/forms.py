@@ -1,7 +1,7 @@
 from wtforms import (
     StringField,
     PasswordField,
-    BooleanFeld,
+    BooleanField,
     IntegerField,
     DateField,
     TextAreaField,
