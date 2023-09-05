@@ -23,11 +23,12 @@ db = SQLAlchemy()
 migrate = Migrate()
 bcrypt = Bcrypt()
 
+
 # Creating Flask instance within a function --> allows for multiple application instances
 def create_app():
     app = Flask(__name__)
 
-    app.secret_key = "secret-key"
+    app.secret_key = "724c38e21bcdacee28e0bf3ec0f1abd3"
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 
